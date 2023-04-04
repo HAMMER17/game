@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.app {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(green, rgb(0, 46, 0), green);
+}
+
+.card {
+  position: relative;
+  width: 100px;
+  height: 150px;
+  border: 2px solid white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  cursor: pointer;
+  background: linear-gradient(45deg, grey, white, grey, white, grey, white, grey);
+}
+
+.card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+
+}
+
+.card h3 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 30px;
+}
+
+.player {
+  display: flex;
+  /* max-width: 100%; */
+}
+
+.battle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 370px;
+}
+
+.trump {
+  position: absolute;
+  bottom: 30%;
+  right: 10px;
+  text-align: center;
+  margin: 10px;
+  /* color: white; */
+}
+
+.trump span {
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.trump p {
+  margin: 10px;
+}
+
+.cozur {
+
+  /* bottom: 10%; */
+  font-size: 40px;
+}
+
+.trump h2 {
+  color: white;
+}
+
+.lenght {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: center;
+  color: white;
+}
+
+.lenght p {
+  font-family: 'Inter', sans-serif;
+  margin: 10px;
+}
+
+.lenght h2 {
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+.button {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  background: red;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  border: none;
+  margin-top: 100px;
+}
+
+.green {
+  background: yellow;
+}
+
+.win {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  background: black;
+}
+
+.show {
+  color: green;
+  margin: 10px;
+}
+
+.lose {
+  color: red;
+  margin: 10px;
+}
+
+.win button {
+  width: 150px;
+  height: 40px;
+  background: red;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+.win button:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif; */
