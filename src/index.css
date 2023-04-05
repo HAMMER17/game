@@ -27,7 +27,28 @@
   align-items: center;
   margin: 2px;
   cursor: pointer;
+  transition: 1s;
   background: linear-gradient(45deg, grey, white, grey, white, grey, white, grey);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  transition: 1s;
+}
+
+.card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  background: linear-gradient(245deg, black, red, black, red, black);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 3px 5px 15px black;
 }
 
 .card h2 {
@@ -53,6 +74,16 @@
   justify-content: center;
   align-items: center;
   height: 370px;
+}
+
+.battle img {
+  position: absolute;
+  top: 30%;
+  /* left: 0; */
+  width: 300px;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 5px 10px 15px black;
 }
 
 .trump {
@@ -161,3 +192,64 @@
 font-family: 'Oswald', sans-serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif; */
+@media (max-width:700px) {
+  .card {
+    width: 80px;
+    height: 120px;
+  }
+
+  .card2 {
+    width: 80px;
+    height: 120px;
+  }
+
+  .cozur {
+    width: 80px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 500px) {
+  .app {
+    width: 100%;
+  }
+
+  .card {
+    width: 50px;
+    height: 90px;
+  }
+
+  .card h2 {
+    font-size: 30px;
+    margin: 10px;
+  }
+
+  .card h3 {
+    font-size: 30px;
+  }
+
+  .card2 {
+    width: 50px;
+    height: 90px;
+  }
+
+  .cozur {
+    width: 50px;
+    height: 80px;
+    font-size: 15px;
+  }
+
+  .cozur span {
+    font-size: 15px;
+  }
+
+  .battle img {
+    position: absolute;
+    top: 40%;
+    width: 200px;
+  }
+
+  .player {
+    flex-wrap: wrap;
+  }
+}

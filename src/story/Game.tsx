@@ -1,8 +1,6 @@
 import { action, makeObservable, observable } from "mobx";
 import { data } from "../data";
 import { CardData, TypeCard } from "../types";
-
-
 class Game {
   trumpCard: TypeCard = TypeCard.by;
   isMyStep: boolean = false;
@@ -71,8 +69,8 @@ class Game {
   startGame() {
     this.deckCard = data;
     this.mixDeck()
-    const firstTyCards = this.reduceCard(6)
-    const firstMyCards = this.reduceCard(6)
+    const firstTyCards = this.reduceCard(3)
+    const firstMyCards = this.reduceCard(3)
     this.defineStep(firstMyCards, firstTyCards)
     return { firstTyCards, firstMyCards }
   }

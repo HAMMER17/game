@@ -11,15 +11,16 @@ import { CardData } from "../types"
 import DeckComponent from "../components/DeckComponent"
 import MyActon from "../components/MyActon"
 import GameOverComponent from "../components/GameOverComponent"
+import joker from '../images/j2.png'
 
 
 const Main: FC = observer(() => {
 
   const gameStart = () => {
-    game.startGame()
-    // const { firstMyCards, firstTyCards } = game.startGame()
-    // myCard.addCard(firstMyCards)
-    // tyCard.addCard(firstTyCards)
+    // game.startGame()
+    const { firstMyCards, firstTyCards } = game.startGame()
+    myCard.addCard(firstMyCards)
+    tyCard.addCard(firstTyCards)
 
   }
   const toAction = () => {
@@ -57,6 +58,7 @@ const Main: FC = observer(() => {
     <div className="app">
       <ToComponentCard cards={tyCard.cards} />
       <div className="battle">
+        <img src={joker} alt="joker" />
         <BattleComponentCard cards={battle.cards} />
       </div>
       <MyComponentCard cards={myCard.cards} onAttack={clickMyCard} />
