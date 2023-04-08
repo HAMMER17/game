@@ -25,7 +25,7 @@ class MyCard extends PlayerCard {
       this.reducerCard(card.id)
       return card
     }
-    alert("This Card don't not here ")
+    alert("Этой карты нет на поле ")
   }
   myDefence(card: CardData, attackCard: CardData) {
     const resultCard = card.rank > attackCard.rank && card.type === attackCard.type
@@ -34,7 +34,7 @@ class MyCard extends PlayerCard {
       this.reducerCard(card.id)
       return card;
     }
-    alert('Him Card stronger')
+    alert('Его карта сильнее')
   }
 
 }

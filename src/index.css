@@ -143,10 +143,12 @@
   cursor: pointer;
   border: none;
   margin-top: 100px;
+  color: white;
 }
 
 .green {
   background: yellow;
+  color: black;
 }
 
 .win {
@@ -186,6 +188,7 @@
 .win button:hover {
   transform: scale(1.1);
   transition: 0.5s;
+
 }
 
 /* font-family: 'Inter', sans-serif;
